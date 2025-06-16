@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul - FullStack Developer Portfolio</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin-top: 0px;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            color: #007bff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            width: 45%;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .section-button {
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .section-button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden-section {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Gokul</h1>
+        <h3>FullStack Developer</h3>
+    </div>
+
+    
+    <div class="button-container">
+        <button class="section-button" onclick="toggleSection('about')">About Me</button>
+        <button class="section-button" onclick="toggleSection('education')">Education</button>
+        <button class="section-button" onclick="toggleSection('projects')">Projects</button>
+        <button class="section-button" onclick="toggleSection('skills')">Programming Skills</button>
+        <button class="section-button" onclick="toggleSection('achievements')">Achievements</button>
+        <button class="section-button" onclick="toggleSection('internship')">Internship</button>
+        <button class="section-button" onclick="toggleSection('certifications')">Certifications</button>
+        <button class="section-button" onclick="toggleSection('languages')">Languages</button>
+    </div>
+
+    
+    <div class="container">
+        
+        <div id="about" class="card hidden-section">
+            <div class="card-header">
+                About Me
+            </div>
+            <div class="card-body">
+                <p>
+                    I'm an intermediate-level web developer with a strong foundation in front-end development. I have experience in building responsive, user-friendly websites and web applications using HTML, CSS, JavaScript. I’m passionate about creating efficient, scalable solutions and continuously improving my skills. In addition to my technical expertise, I’m a team player with excellent problem-solving abilities and a keen interest in the latest web development trends.
+                </p>
+            </div>
+        </div>
+
+        
+        <div id="education" class="card hidden-section">
+            <div class="card-header">
+                Education
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>SNS College of Engineering, Coimbatore</strong> - BE CSE (IoT & Cyber Security including Blockchain Technology)</li>
+                    <li><strong>Kurinji Matric Higher Secondary School, Namakkal</strong> - HSC (June 2020 - April 2022)</li>
+                    <li><strong>Kannan Matric School, Cuddalore</strong> - SSLC (May 2018 - April 2019)</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div id="projects" class="card hidden-section">
+            <div class="card-header">
+                Projects
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>AI-Based Crime Detection</li>
+                    <li>Automated Ambient Illumination Manager</li>
+                    <li>Automatic Tyre Monitoring System</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="skills" class="card hidden-section">
+            <div class="card-header">
+                Programming Skills
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Java (Intermediate)</li>
+                    <li>Front-End Development (Intermediate)</li>
+                    <li>Python (Basic)</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div id="achievements" class="card hidden-section">
+            <div class="card-header">
+                Achievements
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Technical Quiz</li>
+                    <li>Hackathon Participation</li>
+                    <li>Paper Presentation</li>
+                    <li>Sports - Division Level</li>
+                    <li>Participated in Kabaddi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="internship" class="card hidden-section">
+            <div class="card-header">
+                Internship
+            </div>
+            <div class="card-body">
+                <p>Web Development at Falconx Edtech Solution Pvt Ltd</p>
+            </div>
+        </div>
+
+        
+        <div id="certifications" class="card hidden-section">
+            <div class="card-header">
+                Certifications
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Java Course / Prepinsta</li>
+                    <li>Python Course / Prepinsta</li>
+                    <li>Cyber Security Course / Prepinsta</li>
+                    <li>C Course / Great Learning</li>
+                    <li>Git Course / Prepinsta</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="languages" class="card hidden-section">
+            <div class="card-header">
+                Languages
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Tamil</li>
+                    <li>English (B1)</li>
+                    <li>French (A1)</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="contact-info">
+            <div>
+                <h5 class="section-title">Contact</h5>
+                <p>Email: gokuldp163@gmail.com</p>
+                <p>Phone: 9994612163</p>
+            </div>
+            <div>
+                <h5 class="section-title">Social</h5>
+                <p><a href="https://www.linkedin.com/in/gokul-dp" target="_blank">LinkedIn</a></p>
+                <p><a href="https://github.com/gokuldp" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+   <script>
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+
+       
+        if (section.classList.contains("hidden-section")) {
+            section.classList.remove("hidden-section");
+
+            
+            setTimeout(function() {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100); 
+        } else {
+            section.classList.add("hidden-section");
+        }
+    }
+</script>
+
+
+</body>
+</html>
